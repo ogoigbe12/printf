@@ -23,6 +23,10 @@ typedef struct flags
 int _putchar(char c);
 int _puts(char *str);
 
+/* get_print */
+int (*get_print(char s))(va_list, flags_t *);
+
+
 /* print_bases */
 int print_hex(va_list l, flags_t *f);
 int print_hex_big(va_list l, flags_t *f);
