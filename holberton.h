@@ -1,39 +1,18 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-
-#include <stdlib.h>
 #include <stdarg.h>
-#include <unistd.h>
 
 /**
- * struct flags - struct containing flags to "turn on"
- * when a flag specifier is passed to _printf()
- * @plus: flag for the '+' character
- * @space: flag for the ' ' character
- * @hash: flag for the '#' character
- */
-typedef struct flags
+  * struct specifiers - Struct specifiers
+  * @specifier: The conversion specifier
+  * @f: The function pointer
+  */
+typedef struct specifiers
 {
-	int plus;
-	int space;
-	int hash;
-} flags_t;
+	char *specifier;
+	int (*f)(va_list args);
+} spc_dt;
 
-/* write_funcs */
-int _putchar(char c);
-int _puts(char *str);
-
-/* get_print */
-int (*get_print(char s))(va_list, flags_t *);
-
-
-/* print_bases */
-int print_hex(va_list l, flags_t *f);
-int print_hex_big(va_list l, flags_t *f);
-int print_binary(va_list l, flags_t *f);
-int print_octal(va_list l, flags_t *f);
-
-/* _printf */
 int _printf(const char *format, ...);
 
 #endif
