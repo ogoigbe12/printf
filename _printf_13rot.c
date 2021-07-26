@@ -5,7 +5,7 @@
  * Return: counter
  *
  */
-int printf_rot13(va_list args)
+int _printf_rot13(va_list args)
 {
 	int i, j, counter = 0;
 	int k = 0;
