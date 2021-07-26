@@ -19,6 +19,10 @@ typedef struct flags
 	int hash;
 } flags_t;
 
+/* write_funcs */
+int _putchar(char c);
+int _puts(char *str);
+
 /* print_bases */
 int print_hex(va_list l, flags_t *f);
 int print_hex_big(va_list l, flags_t *f);
@@ -27,4 +31,5 @@ int print_octal(va_list l, flags_t *f);
 
 /* _printf */
 int _printf(const char *format, ...);
+
 #endif
