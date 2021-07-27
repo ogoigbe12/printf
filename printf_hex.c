@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * printf_hex - prints an hexgecimal number.
+ * printf_hex - prints an hexadecimal number.
  * @val: arguments.
  * Return: counter.
  */
@@ -35,3 +35,4 @@ int printf_hex(va_list val)
 	free(array);
 	return (counter);
 }
+
