@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * printf_pointer - prints an hexgecimal number.
+ * printf_pointer - prints an hexadecimal number.
  * @val: arguments.
  * Return: counter.
  */
@@ -29,3 +29,4 @@ int printf_pointer(va_list val)
 	b = printf_hex_aux(a);
 	return (b + 2);
 }
+
